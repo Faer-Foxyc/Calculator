@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using Калькулятор.Data;
 
 namespace Калькулятор
 {
@@ -20,6 +8,8 @@ namespace Калькулятор
     /// </summary>
     public partial class MainWindow : Window
     {
+        DataClass _dataClass = new DataClass();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,17 +17,17 @@ namespace Калькулятор
 
         private void btn_1_Click(object sender, RoutedEventArgs e)
         {
-            tb_Text.Text += "1";
+            tb_Text.Text += _dataClass.NumbOne;
         }
 
         private void btn_2_Click(object sender, RoutedEventArgs e)
         {
-            tb_Text.Text += "2";
+            tb_Text.Text += _dataClass.NumbTwo;
         }
 
         private void btn_3_Click(object sender, RoutedEventArgs e)
         {
-            tb_Text.Text += "3";
+            tb_Text.Text += _dataClass.NumbThree;
         }
 
         private void btn_4_Click(object sender, RoutedEventArgs e)
@@ -73,6 +63,36 @@ namespace Калькулятор
         private void btn_0_Click(object sender, RoutedEventArgs e)
         {
             tb_Text.Text += "0";
+        }
+
+        private void btn_Division_Click(object sender, RoutedEventArgs e)
+        {
+            tb_Text.Text += "/";
+        }
+
+        private void btn_Plus_Click(object sender, RoutedEventArgs e)
+        {
+            tb_Text.Text += "+";
+        }
+
+        private void btn_Multiplication_Click(object sender, RoutedEventArgs e)
+        {
+            tb_Text.Text += "*";
+        }
+
+        private void Equally_Click(object sender, RoutedEventArgs e)
+        {
+            tb_Text.Text += "=";
+        }
+
+        private void Point_Click(object sender, RoutedEventArgs e)
+        {
+            tb_Text.Text += ".";
+        }
+
+        private void Minus_Click(object sender, RoutedEventArgs e)
+        {
+            tb_Text.Text += "-";
         }
     }
 }

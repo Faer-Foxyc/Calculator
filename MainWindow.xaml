@@ -17,19 +17,19 @@
         <Button Grid.Column="0" Grid.Row="1" Content="1" FontSize="30" x:Name="btn_1" Click="btn_1_Click"/>
         <Button Grid.Column="1" Grid.Row="1" Content="2" FontSize="30" x:Name="btn_2" Click="btn_2_Click"/>
         <Button Grid.Column="2" Grid.Row="1" Content="3" FontSize="30" x:Name="btn_3" Click="btn_3_Click"/>
-        <Button Grid.Column="3" Grid.Row="1" Content="/" FontSize="30" x:Name="btn_Division"/>
+        <Button Grid.Column="3" Grid.Row="1" Content="/" FontSize="30" x:Name="btn_Division" Click="btn_Division_Click"/>
         <Button Grid.Column="0" Grid.Row="2" Content="4" FontSize="30" x:Name="btn_4" Click="btn_4_Click"/>
         <Button Grid.Column="1" Grid.Row="2" Content="5" FontSize="30" x:Name="btn_5" Click="btn_5_Click"/>
         <Button Grid.Column="2" Grid.Row="2" Content="6" FontSize="30" x:Name="btn_6" Click="btn_6_Click"/>
-        <Button Grid.Column="3" Grid.Row="2" Content="+" FontSize="30" x:Name="btn_Plus"/>
+        <Button Grid.Column="3" Grid.Row="2" Content="+" FontSize="30" x:Name="btn_Plus" Click="btn_Plus_Click"/>
         <Button Grid.Column="0" Grid.Row="3" Content="7" FontSize="30" x:Name="btn_7" Click="btn_7_Click"/>
         <Button Grid.Column="1" Grid.Row="3" Content="8" FontSize="30" x:Name="btn_8" Click="btn_8_Click"/>
         <Button Grid.Column="2" Grid.Row="3" Content="9" FontSize="30" x:Name="btn_9" Click="btn_9_Click"/>
-        <Button Grid.Column="3" Grid.Row="3" Content="*" FontSize="30" x:Name="btn_Multiplication"/>
-        <Button Grid.Column="0" Grid.Row="4" Content="=" FontSize="30" x:Name="Equally"/>
+        <Button Grid.Column="3" Grid.Row="3" Content="*" FontSize="30" x:Name="btn_Multiplication" Click="btn_Multiplication_Click"/>
+        <Button Grid.Column="0" Grid.Row="4" Content="=" FontSize="30" x:Name="Equally" Click="Equally_Click"/>
         <Button Grid.Column="1" Grid.Row="4" Content="0" FontSize="30" x:Name="btn_0" Click="btn_0_Click"/>
-        <Button Grid.Column="2" Grid.Row="4" Content="." FontSize="30" x:Name="Point"/>
-        <Button Grid.Column="3" Grid.Row="4" Content="-" FontSize="30" x:Name="Minus"/>
+        <Button Grid.Column="2" Grid.Row="4" Content="." FontSize="30" x:Name="Point" Click="Point_Click"/>
+        <Button Grid.Column="3" Grid.Row="4" Content="-" FontSize="30" x:Name="Minus" Click="Minus_Click"/>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
